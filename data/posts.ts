@@ -33,6 +33,6 @@ export const posts: Post[] = [
     title: "UI Design Basics",
     slug: "ui-design-basics",
     content: "Focus on spacing, typography, and colors.",
-    username: "sara",
+    username: "nabil",
   },
 ];
