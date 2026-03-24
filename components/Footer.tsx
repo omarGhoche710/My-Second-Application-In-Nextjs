@@ -5,7 +5,8 @@ const Footer = () => {
     <footer className="bg-gray-700">
       <div className="max-w-6xl mx-auto py-6 px-4 flex justify-center items-center">
         <p className="text-white text-lg text-center">
-          &copy; {new Date().getFullYear()} DevConnect. All rights reserved.
+          &copy; {new Date().getFullYear()} <span>DevConnect</span>. All rights
+          reserved.
           <br />
           Connecting developers and communities, one project at a time.
         </p>
