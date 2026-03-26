@@ -18,7 +18,7 @@ const Navbar = () => {
           DevConnect
         </Link>
 
-        <div className="space-x-6">
+        <div className="flex items-center gap-6">
           <Link
             href="/about"
             className="text-gray-700 text-xl font-semibold hover:text-(--main-color) transition-colors duration-300"

@@ -1,5 +1,6 @@
 import DeveloperCard from "@/components/DeveloperCard";
 import { developers } from "@/data/developers";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -20,8 +21,24 @@ const page = () => {
             name={d.name}
             role={d.role}
             username={d.username}
+            rating={d.rating}
           />
         ))}
+      </div>
+
+      <div className="space-x-4">
+        <Link
+          href={"/developers/top-rated"}
+          className="inline-block text-white bg-(--main-color) px-4 py-2 rounded-lg shadow-[0_0_5px_0_var(--main-color)] hover:shadow-[0_0_10px_0_var(--main-color)] transition duration-300"
+        >
+          View Top Rated Developers
+        </Link>
+        <Link
+          href={"/developers/new"}
+          className="inline-block text-white bg-(--main-color) px-4 py-2 rounded-lg shadow-[0_0_5px_0_var(--main-color)] hover:shadow-[0_0_10px_0_var(--main-color)] transition duration-300"
+        >
+          View New Members
+        </Link>
       </div>
     </section>
   );

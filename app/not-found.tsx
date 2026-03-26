@@ -19,13 +19,13 @@ const notFound = () => {
           px-4
           py-2
           rounded-lg
-          hover:bg-(--secondary-color)
           transition
           transform
-          hover:scale-110
+          hover:shadow-[0_0_10px_0_var(--main-color)]
+          duration-300
         "
       >
-        Go to home
+        Go Back Home
       </Link>
     </section>
   );

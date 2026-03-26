@@ -4,6 +4,8 @@ export type Developer = {
   name: string;
   role: string;
   bio: string;
+  rating: number;
+  isNew: boolean;
 };
 
 export const developers: Developer[] = [
@@ -13,6 +15,8 @@ export const developers: Developer[] = [
     name: "Mohamed Ghoch",
     role: "Frontend Developer",
     bio: "Passionate about React and building modern UI.",
+    rating: 4.8,
+    isNew: false,
   },
   {
     id: 2,
@@ -20,12 +24,16 @@ export const developers: Developer[] = [
     name: "Ahmad M3oush",
     role: "Backend Developer",
     bio: "Specialized in Node.js and database design.",
+    rating: 4.5,
+    isNew: true,
   },
   {
     id: 3,
     username: "nabil",
-    name: "Nabil ka3kour",
+    name: "Nabil Ka3kour",
     role: "UI Designer",
     bio: "Loves creating clean and simple user interfaces.",
+    rating: 4.2,
+    isNew: true,
   },
 ];

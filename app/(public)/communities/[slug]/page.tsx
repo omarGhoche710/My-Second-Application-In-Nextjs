@@ -1,6 +1,7 @@
 import React from "react";
 import { communities } from "@/data/communities";
 import Link from "next/link";
+import JoinButton from "@/components/JoinButton";
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
@@ -23,9 +24,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       </div>
 
       <div>
-        <button className="inline-block text-white bg-(--main-color) px-4 py-2 rounded-lg hover:bg-(--secondary-color) transform hover:scale-110 transition duration-300 cursor-pointer">
-          Join
-        </button>
+        <JoinButton />
       </div>
 
       <div>

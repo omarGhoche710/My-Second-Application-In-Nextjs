@@ -23,6 +23,9 @@ const page = async ({ params }: { params: Promise<{ username: string }> }) => {
         <h1 className="text-3xl font-bold">{developer.name}</h1>
         <p className="text-gray-800 font-semibold">{developer.role}</p>
         <p className="text-gray-600">{developer.bio}</p>
+        <p className="text-gray-900 font-semibold">
+          Rating: {developer.rating}
+        </p>
       </div>
 
       {developerPosts.length > 0 ? (

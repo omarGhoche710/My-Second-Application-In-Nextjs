@@ -18,13 +18,13 @@ const page = () => {
       <div className="space-x-4">
         <Link
           href={"/communities"}
-          className="inline-block border border-(--main-color) text-(--main-color) px-4 py-2 rounded-lg hover:text-white hover:bg-(--main-color) transform hover:-translate-y-1 transition duration-300"
+          className="inline-block text-white bg-(--main-color) px-4 py-2 rounded-lg shadow-[0_0_5px_0_var(--main-color)] hover:shadow-[0_0_10px_0_var(--main-color)] transition duration-300"
         >
           Visit Our Communities
         </Link>
         <Link
           href={"/topics"}
-          className="inline-block border border-(--main-color) text-(--main-color) px-4 py-2 rounded-lg  hover:text-white hover:bg-(--main-color) transform hover:-translate-y-1 transition duration-300"
+          className="inline-block text-(--main-color) bg-gray-100 px-4 py-2 rounded-lg shadow-[0_0_5px_0_var(--main-color)] hover:shadow-[0_0_10px_0_var(--main-color)] transition duration-300"
         >
           Explore Topics
         </Link>
