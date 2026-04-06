@@ -1,6 +1,7 @@
 import React from "react";
 import { communities } from "@/data/communities";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import JoinButton from "@/components/JoinButton";
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
@@ -8,11 +9,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const community = communities.find((c) => c.slug === slug);
 
   if (!community) {
-    return (
-      <section>
-        <h1 className="text-3xl font-bold">Community not found</h1>
-      </section>
-    );
+    notFound();
   }
 
   return (

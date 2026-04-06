@@ -1,0 +1,18 @@
+{
+  "theme": "light",
+  "language": "ar",
+  "notifications": {
+    "email": true,
+    "sms": false,
+    "push": true
+  },
+  "privacy": {
+    "profileVisible": true,
+    "searchIndexing": false
+  },
+  "layout": {
+    "sidebar": "expanded",
+    "navbar": "fixed",
+    "widgets": ["stats", "recentActivity", "tasks"]
+  }
+}

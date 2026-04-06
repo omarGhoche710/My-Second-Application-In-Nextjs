@@ -1,5 +1,6 @@
+import PostTitle from "@/components/PostTitle";
 import Link from "next/link";
-import React from "react";
+import React, { Suspense } from "react";
 
 const page = () => {
   return (
@@ -8,13 +9,14 @@ const page = () => {
         <h1 className="text-4xl text-gray-900 font-bold">
           Welcome to <span className="text-(--main-color)">DevConnect</span>
         </h1>
-        <p className="text-gray-600 max-w-2xl">
-          Explore communities and topics to connect with developers like you,
-          discover new technologies, ask questions, and learn from experienced
-          members of the developer community.
-        </p>
       </div>
-
+      <Suspense
+        fallback={
+          <p className="text-gray-600 max-w-2xl">⌛ Loading post title...</p>
+        }
+      >
+        <PostTitle />
+      </Suspense>
       <div className="space-x-4">
         <Link
           href={"/communities"}

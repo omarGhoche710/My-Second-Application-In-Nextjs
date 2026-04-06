@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import { notFound } from "next/navigation";
 import { developers } from "@/data/developers";
 import { posts } from "@/data/posts";
 
@@ -8,11 +8,7 @@ const page = async ({ params }: { params: Promise<{ username: string }> }) => {
   const developer = developers.find((d) => d.username === username);
 
   if (!developer) {
-    return (
-      <section>
-        <h1 className="text-3xl font-bold">Developer not found</h1>
-      </section>
-    );
+    notFound();
   }
 
   const developerPosts = posts.filter((p) => p.username === username);

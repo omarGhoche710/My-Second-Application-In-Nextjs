@@ -1,6 +1,6 @@
 import React from "react";
 
-const page = () => {
+const page = async () => {
   return (
     <section className="space-y-4">
       <h1 className="text-3xl font-bold">About Us</h1>

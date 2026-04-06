@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const Navbar = () => {
+  // throw new Error("Navbar component is not implemented yet.");
   return (
     <header className="border-b border-(--main-color) backdrop-blur bg-white/80">
       <nav className="max-w-6xl mx-auto py-6 px-4 flex justify-between items-center">
