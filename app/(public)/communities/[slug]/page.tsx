@@ -9,7 +9,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const community = communities.find((c) => c.slug === slug);
 
   if (!community) {
-    notFound();
+    return notFound();
   }
 
   return (

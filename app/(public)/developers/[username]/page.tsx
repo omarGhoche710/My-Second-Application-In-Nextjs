@@ -8,7 +8,7 @@ const page = async ({ params }: { params: Promise<{ username: string }> }) => {
   const developer = developers.find((d) => d.username === username);
 
   if (!developer) {
-    notFound();
+    return notFound();
   }
 
   const developerPosts = posts.filter((p) => p.username === username);
