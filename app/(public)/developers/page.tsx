@@ -3,7 +3,8 @@ import { developers } from "@/data/developers";
 import Link from "next/link";
 import React from "react";
 
-const page = () => {
+const page = async () => {
+
   return (
     <section className="space-y-6">
       <div className="space-y-2">

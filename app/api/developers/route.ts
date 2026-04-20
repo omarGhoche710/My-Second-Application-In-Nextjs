@@ -3,7 +3,9 @@ import { Developer } from "@/types/developer";
 import { developers } from "@/lib/data/developers";
 
 export async function GET() {
-  return NextResponse.json(developers);
+  const response = NextResponse.json(developers);
+  response.cookies.set("developers-count", developers.length.toString());
+  return response;
 }
 
 export async function POST(request: Request) {
